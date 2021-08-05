@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>問卷調查</title>
+   <link rel="stylesheet" type="text/css" href="/static/style.css">
+  </head>
+  <body>
+    <div id="container">
+      <div class="pagetitle">
+        <h1>問卷已結束！</h1>
+        <h2>請填寫您收到簡訊的手機號碼（兩者必須一致），以便我們寄送禮券給您。</h2>
+      </div>
+      <div id="main">
+        <form method="post" action="{{ url_for('end') }}">
+          <!-- <label for="location">戶籍地：</label>
+          <select name="location" id="location">
+            <option value="Taipei">臺北市</option>
+            <option value="New Taipei">新北市</option>
+            <option value="Taoyuan">桃園市</option>
+            <option value="Taichung">臺中市</option>
+            <option value="Tainan">臺南市</option>
+            <option value="Kaoshiong">高雄市</option>
+            <option value="Hsinchu-county">新竹縣</option>
+            <option value="Miaoli">苗栗縣</option>
+            <option value="Changhua">彰化縣</option>
+            <option value="Nantou">南投縣</option>
+            <option value="Yunlin">雲林縣</option>
+            <option value="Chiayi-county">嘉義縣</option>
+            <option value="Pingdong">屏東縣</option>
+            <option value="Yilan">宜蘭縣</option>
+            <option value="Hualian">花蓮縣</option>
+            <option value="Taidong">臺東縣</option>
+            <option value="Kinmen">金門縣</option>
+            <option value="Lienchang">連江縣</option>
+            <option value="Keelung">基隆市</option>
+            <option value="Hsinchu-city">新竹市</option>
+            <option value="Ciayi-city">嘉義市</option>
+          </select>
+          <input type="text" name="birth" placeholder="西元出生年"/>
+          <label for="sex">性別：</label>
+          <select name="sex" id="sex">
+            <option value="male">男</option>
+            <option value="female">女</option>
+          </select>
+          <label for="president">上次總統大選您投給：</label>
+          <select name="president" id="president">
+            <option value=1>宋楚瑜</option>
+            <option value=2>韓國瑜</option>
+            <option value=3>蔡英文</option>
+          </select> -->
+          <input type="text" name="phone" placeholder="手機號碼"/>
+          <button class="button" type="submit" name="submit">確認</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
